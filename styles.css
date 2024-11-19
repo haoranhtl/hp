@@ -1,0 +1,326 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 850px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#about-me {
+    text-align: left; /* Ensures all text is left-aligned by default */
+}
+
+.profile-picture {
+    display: block;      /* Turns the image into a block element */
+    margin: 0 auto 1rem; /* Centers the image horizontally and adds space below */
+    width: 150px;        /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%;  /* Makes the image circular */
+}
+
+
+
+.divider {
+    border: none;         /* Remove default border */
+    border-top: 1px solid #ccc;  /* Adjust color as needed */
+    width: 80%;            /* Adjust width as needed */
+    margin: 1rem auto;     /* Center the line and add spacing */
+}
+
+.section-link {
+    color: #fff; /* Match the color to your design */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+
+.section-link:hover {
+    text-decoration: underline; /* Optional: add underline on hover */
+}
+
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    margin-top: 1.5rem; /* Adds space above the icons */
+    gap: 5px; /* Adds spacing between icons */
+
+}
+
+.social-links a {
+    margin: 0 0.5rem; /* Space between icons */
+        height: 34px; /* Ensures all icons have the same height */
+    object-fit: contain; /* Maintains the aspect ratio of each icon */
+}
+
+.social-links img{
+    width: 30px; /* Adjust size as needed */
+       height: auto; /* Maintain aspect ratio */
+        object-fit: contain;
+
+}
+.social-links img[alt="MIT"] {
+    width: 150px; /* Specific width for the MIT logo */
+}
+.social-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+      transition: transform 0.3s;
+}
+.social-icon:not([alt="MIT"]):hover {
+    transform: scale(1.1); /* Prevent MIT logo from scaling excessively */
+}
+
+
+
+/* Publications Section */
+#publications {
+   
+    display: block; /* Each publication item stacks vertically */
+}
+
+.publication {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    width: 100%; /* Take up full width to avoid side-by-side layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+
+.publication img {
+    flex: 0 0 40%; /* The image now takes up 25% of the width */
+    width: auto; /* Let the image keep its aspect ratio */
+    max-width: 300px; /* Adjust this as needed */
+    margin-right: 15px; /* Adds spacing between the image and text */
+    object-fit: contain; /* Ensures the image fits within its container */
+    object-fit: contain; /* Ensures images maintain aspect ratio */
+    height: auto; /* Maintains proportional scaling */
+}
+
+.publication-details {
+    flex: 0 0 60%; /* The text area takes up the remaining 75% */
+    max-width: calc(100% - 120px - 20px); /* Adjust for image size and spacing */
+    overflow-wrap: break-word; /* Prevents text from overflowing */
+    text-align: left; /* Aligns text to the left */
+}
+
+
+.publication-details h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #000;
+}
+
+.publication-details p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.publication-details a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.publication-details a:hover {
+    text-decoration: underline;
+}
+
+
+#conferences h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#conferences ul {
+    list-style-type: disc; /* Dotted list style */
+    padding-left: 20px; /* Indent for the list */
+}
+
+#conferences li {
+    margin-bottom: 1.5rem; /* Space between each list item */
+}
+
+#conferences h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    color: #000;
+}
+
+#conferences p {
+    margin: 0.2rem 0;
+    color: #666;
+}
+
+
+
+#industry-experiences h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#industry-experiences ul {
+    list-style-type: disc; /* Dotted list style */
+    padding-left: 20px; /* Indent the list */
+}
+
+#industry-experiences li {
+    margin-bottom: 1.5rem; /* Space between each list item */
+}
+
+#industry-experiences h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    color: #000;
+}
+
+#industry-experiences p {
+    margin: 0.2rem 0;
+    color: #666;
+}
+
+
+.experience {
+    margin-bottom: 1.5rem;
+}
+
+.experience h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    color: #000;
+}
+
+.experience p {
+    margin: 0.2rem 0;
+    color: #666;
+}
+
+
+#awards-talks h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#awards-talks ul {
+    list-style-type: disc; /* Dotted list style */
+    padding-left: 20px; /* Indent for the list */
+}
+
+#awards-talks li {
+    margin-bottom: 1.5rem; /* Space between each list item */
+}
+
+#awards-talks h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    color: #000;
+}
+
+#awards-talks p {
+    margin: 0.2rem 0;
+    color: #666;
+}
+
+#service {
+        color: #000; /* Set all text in the Service section to black */
+
+    padding: 2rem;
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 2rem; /* Spacing after the section */
+}
+
+#service h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+#service ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#service li {
+    margin-bottom: 1rem;
+    color: #000; /* Adjust text color for consistency */
+}
+
+
+section h2 {
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+
+/* Add padding to the bottom of the main content area */
+body {
+    padding-bottom: 50px; /* Adjust this value to match the height of your footer */
+}
+
